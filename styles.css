@@ -1,0 +1,191 @@
+/* 基本設定 */
+:root {
+    --primary-color: #4CAF50;
+    --primary-light: #E8F5E9;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+header {
+    background-color: var(--background-color);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: var(--text-color);
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+}
+
+/* ヒーローセクション */
+.hero {
+    background-color: var(--primary-light);
+    padding: 160px 0 80px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* CTAボタン */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #388E3C;
+}
+
+/* Aboutセクション */
+.about {
+    padding: 80px 0;
+    background-color: var(--background-color);
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* イベントセクション */
+.event {
+    padding: 80px 0;
+    background-color: var(--primary-light);
+}
+
+.event h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.event-details {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.event-info {
+    margin-bottom: 30px;
+}
+
+.event-info p {
+    margin: 10px 0;
+}
+
+.event-info i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* フッター */
+footer {
+    background-color: var(--background-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social-icons {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #666;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+    }
+} 
